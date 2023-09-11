@@ -46,6 +46,7 @@ public class Lucky {
 			if (n1str.equals(win) && n2str.equals(win) || n1str.equals(win) && n3str.equals(win) || n2str.equals(win) && n3str.equals(win) ) {
 				System.out.println("You got 2 sevens! you win 5 credits!");
 				credits = credits + 5;
+				System.out.println("Credits left: " + credits);
 				System.out.println("Do you want to play again? Enter e to exit or press enter to continue");
 				again = sc.nextLine();
 				if (again.equals("e")) {
