@@ -43,9 +43,8 @@ public class Lucky {
 			
 			
 			
-			
 			if (n1str.equals(win) && n2str.equals(win) || n1str.equals(win) && n3str.equals(win) || n2str.equals(win) && n3str.equals(win) ) {
-				System.out.println("You win and you got two sevens!");
+				System.out.println("You got 2 sevens! you win 5 credits!");
 				credits = credits + 5;
 				System.out.println("Do you want to play again? Enter e to exit or press enter to continue");
 				again = sc.nextLine();
@@ -56,11 +55,11 @@ public class Lucky {
 			}
 		   
 			else if (n1str.equals(win) || n2str.equals(win) || n3str.equals(win)){
-				System.out.println("You win");
+				System.out.println("A seven! You win 3 credits!");
 				credits = credits + 3;
 			}
 		   
-			System.out.println("Do you want to play again? Enter e to exit or press enter to continue");
+			System.out.println("Do you want to play again? Enter 'e' to exit or press enter to continue");
 			System.out.println("Credits left: " + credits);
 			again = sc.nextLine();
 			if (again.equals("e")) {
@@ -69,7 +68,7 @@ public class Lucky {
 			}
 			
 			else if (credits == 0) {
-				System.out.println("you run out of credits.");
+				System.out.println("You have run out of credits! Play again and add credits.");
 			}
 			}
 		while (credits > 0);
